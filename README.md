@@ -42,7 +42,7 @@
 
 1. Клонируйте репозиторий:
    ```bash
-   git clone https://github.com/ваш-username/it-support-bot.git
+   git clone https://github.com/karandash1111k/it-support-bot.git
    cd it-support-bot
    ```
 
