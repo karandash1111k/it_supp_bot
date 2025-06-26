@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru" class="email">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/email.css" type="text/css">
+    <script src="js/email_script.js" defer></script>
+    <title>Код подтверждения</title>
+</head>
+<body class="email">
+    <div class="email__container">
+        <div class="email-card">
+            <!-- Блок: email-header -->
+            <div class="email-header">
+                <img src="img/ranepa-logo.svg"
+                     alt="IT Support Logo"
+                     class="email-header__logo">
+                <h1 class="email-header__title">Подтверждение входа</h1>
+            </div>
+
+            <!-- Блок: email-card__content -->
+            <div class="email-card__content">
+                <p class="email-card__text">Здравствуйте,</p>
+
+                <p class="email-card__text">Для завершения авторизации в IT Support Bot используйте следующий код подтверждения:</p>
+
+                <!-- Блок: email-code -->
+                <div class="email-code">
+                    {{ code }}
+                </div>
+
+                <p class="email-card__text">
+                    Код действителен в течение <strong class="email-card__text_highlight">10 минут</strong>.
+                    Если вы не запрашивали этот код, проигнорируйте это письмо.
+                </p>
+
+                <p class="email-card__text">
+                    С уважением,<br>Команда VKBot RANEPA
+                </p>
+            </div>
+
+            <!-- Блок: email-footer -->
+            <div class="email-footer">
+                <p class="email-footer__note email-card__text_small">
+                    Это письмо было отправлено автоматически. Пожалуйста, не отвечайте на него.
+                </p>
+                <p class="email-footer__note email-card__text_small">
+                    VKBot RANEPA.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
